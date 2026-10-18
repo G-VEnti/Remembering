@@ -10,13 +10,7 @@ public class TargetBehaviour : MonoBehaviour
     {
         targetM = gameObject.GetComponentInParent<TargetManager>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     void OnTriggerEnter(Collider other)
     {
         if (other != null && other.CompareTag("Bullet"))
@@ -25,7 +19,6 @@ public class TargetBehaviour : MonoBehaviour
             UIManager.instance.AddScore(score);
             Instantiate(choppedTarget, transform.position, transform.rotation);
             Destroy(gameObject);
-            Debug.Log("Target hit");
         }   
     }
 }
