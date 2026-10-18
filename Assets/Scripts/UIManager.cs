@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
         else Destroy(this);
 
         score = 0;
+        scoreTxt.text = score.ToString();
     }
 
     // Update is called once per frame

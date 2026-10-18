@@ -156,4 +156,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletBehaviour
   rgbBullet: {fileID: 6092158165241879943}
-  thrust: 15
+  thrust: 30

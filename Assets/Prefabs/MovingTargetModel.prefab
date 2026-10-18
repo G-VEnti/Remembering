@@ -78,11 +78,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2270e3c9452e30142856295a5d3e3c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingTargetBehaviour
-  locations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  choppedTarget: {fileID: 5249957704615916500, guid: 5fe61194d7dc33147a333ed106acfd83, type: 3}
   score: 500
-  speed: 1

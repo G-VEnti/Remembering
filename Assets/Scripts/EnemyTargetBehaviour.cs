@@ -31,7 +31,6 @@ public class EnemyTargetBehaviour : MonoBehaviour
         if (other != null && other.CompareTag("Bullet"))
         {
             UIManager.instance.SubtractScore(score);
-            Destroy(other.gameObject);
         }
     }
 }

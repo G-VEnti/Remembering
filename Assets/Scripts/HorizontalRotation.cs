@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class HorizontalRotation : MonoBehaviour
-{    public float rotSpeed = 1;
+{    
+    public float rotSpeed = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

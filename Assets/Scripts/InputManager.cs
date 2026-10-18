@@ -5,6 +5,7 @@ public class InputManager : MonoBehaviour
     public static InputManager instance;
     public InputSystem_Actions inputs;
     public Vector2 mouseAxis;
+    public Vector2 movement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,5 +21,6 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         mouseAxis = inputs.Player.Look.ReadValue<Vector2>();
+        movement = inputs.Player.Move.ReadValue<Vector2>();
     }
 }

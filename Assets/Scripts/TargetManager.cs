@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TargetManager : MonoBehaviour
 {
-    public bool destroyed = true;
+    public bool destroyed = false;
     private float timer;
     private float respawnTime = 3.0f;
     public GameObject target;
@@ -15,7 +15,7 @@ public class TargetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (destroyed) timer += Time.deltaTime;
+        if (destroyed == true) timer += Time.deltaTime;
 
         if (timer >= respawnTime)
         {
